@@ -1,0 +1,596 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #494949;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    height: 70px;
+    background-color: black;
+    color: white;
+}
+nav ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    margin-inline: 22px;
+}
+.logo{
+    font-size: 22px;
+}
+.main{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 155px;
+
+}
+.main img{
+    width: 600px;
+}
+.mainText{
+    margin-top: 33px;
+    color: rgb(11, 11, 11);
+}
+.mainText h1{
+    font-size: 45px;
+}
+.mainText p{
+    margin-top: 22px;
+    color: rgb(15, 15, 15);
+
+}
+.mainText button{
+    margin-top: 22px;
+    width: 140px;
+    height: 37px;
+    background-color: rgb(252, 84, 22);
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+.foods{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+.foods img{
+    width: 100%;
+}
+.card{
+    width: 300px;
+    background-color: #fff;
+    padding: 11px;
+    cursor: pointer;
+}
+.card p{
+    padding: 11px;
+}
+.card button{
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.head{
+    text-align: center;
+    padding: 40px;
+    color: white;
+}
+.reviews{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+     
+}
+.reviewCard{
+    width: 300px;
+    background-color: #fff;
+    text-align: center;
+    padding: 22px;
+    border-radius: 11px;
+}
+.reviews img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.trendFood{
+    
+    width: 900px;
+    height: 300px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+.trendFood .trends{
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    margin: auto;
+    transition: all 1s ease;
+     
+}
+ .trends img{
+    width: 270px;
+    background-color: #fff;
+    padding: 4px;
+}
+
+.blogs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.blogCard{
+    width: 300px;
+    height: 280px;
+    margin-inline: 22px;
+    background-color: white;
+    padding: 11px;
+    margin-top: 22px;
+}
+.blogCard img{
+    width: 100%;
+}
+.blogCard p{
+    padding: 11px;
+}
+.blogCard a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 14px;
+    background-color: orange;
+    position: relative;
+    top: 12px;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    padding: 66px;
+    margin-top: 66px;
+}
+.footer .text p{
+    margin-top: 11px;
+}
+
+.cardDetail{
+    position: fixed;
+    top: 4%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, 40%);
+    width: 600px;
+    padding: 21px;
+    background-color: white;
+    text-align: center;
+    color: black;
+}
+.cardDetail img{
+    width: 300px;
+}
+.cardDetail i{
+    position: absolute;
+    left: 0px;
+    top: -1px;
+    padding: 8px;
+    background-color: black;
+    color: white;
+    font-size:22px;
+    cursor: pointer;
+}
+#bar{
+    display: none;
+    font-size: 27px;
+}
+
+@media screen and (max-width:1100px){
+    .main{
+        display: block;
+        text-align: center;
+
+    }
+    .main img{
+        margin-top: 22px;
+    }
+}
+
+@media screen and (max-width:800px){
+    ul li{
+        display: none;
+    }
+    #bar{
+        display: block;
+    }
+}
+
+@media screen and (max-width:700px){
+    .main img{
+        width: 90%;
+        border-radius: 22px;
+    }
+    .cardDetail{
+        width: 80%;
+    }
+    .cardDetail img{
+        width: 200px;
+    }
+}
+
+ 
+
+@media screen and (max-width:930px){
+    .trendFood{
+        width: 90%;
+    }
+     .trends img{
+        width: 160px;
+        height: 200px;
+    }
+}
+ 
+@media screen and (max-width:600px){
+    .main h1{
+       font-size: 34px;
+    }
+    .mainText{
+        padding: 6px;
+    }
+    .trendFood{
+        width: 90%;
+    }
+    .trendFood .trends{
+         display: flex;
+         gap: 11px;
+    }
+     .trends img{
+         width: 22%;
+         height: 120px;
+    }
+}
+
+
+/* MENU PAGE */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+}
+
+.menu {
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.menu-info {
+    flex-grow: 1;
+}
+
+.menu-info h3 {
+    margin: 0;
+    color: #333;
+}
+
+.menu-info p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.price {
+    font-weight: bold;
+    color: #333;
+}
+
+.menu-item:hover {
+    background: #ddd;
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+}
+
+
+/* ABOUT PAGE*/
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fbfbfb;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.intro {
+    text-align: center;
+    padding: 20px;
+}
+
+.history {
+    padding: 20px;
+}
+
+.values {
+    background-color: #f6f2f2;
+    padding: 20px;
+}
+
+.values ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.team {
+    text-align: center;
+    padding: 20px;
+}
+
+.team-member {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s; /* Transition for smooth scaling */
+}
+
+.team-member img:hover {
+    transform: scale(1.5); /* Magnify the image on hover */
+}
+
+.team-member p {
+    color: rgb(4, 4, 4); /* Ensure text color is consistent on black background */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/*LOCATION PAGE*/
+.location-page { /* Parent class for the location page */
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #070707, #7bd0fe);
+    color: white;
+}
+
+.location-page header {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right, #070707, #7bb2fe); /* Gradient background */
+    font-size: 2em;
+    animation: fadeIn 1s; /* Animation for smooth entry */
+}
+
+.location-page .location-details {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 40px;
+    animation: slideIn 1s; /* Animation for smooth entry */
+}
+
+.location-page .info-card {
+    background-color: #88a3b8; /* Darker background for info card */
+    border: 2px solid #09156f; /* Border for added definition */
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    text-align: left; /* Align text within the card */
+    transition: transform 0.5s; /* Smooth transition */
+}
+
+.location-page .info-card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.location-page .map-container {
+    width: 500px; /* Width of map container */
+}
+
+.location-page .map {
+    border: 2px solid #555; /* Border for map frame */
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow to maintain rounded edges */
+    transition: all 0.5s; /* Smooth transition for hover effect */
+}
+
+.location-page .map:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.location-page footer {
+    text-align: center;
+    padding: 10px;
+    background: #333; /* Darker background for footer */
+    border-top: 2px solid #555; /* Border for footer */
+    color: white;
+    animation: fadeIn 1s; /* Animation for smooth entry */
+}
+
+/* Animations specific to the location page */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+
+/*CONTACT PAGE*/
+.contact-page { /* Specific styles for the contact page */
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #5976cd, #f6f3f3); /* Gradient background */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    transition: all 0.5s; /* Smooth transitions */
+}
+
+.contact-page header {
+    background: #abc6e0; /* Darker background for header */
+    padding: 20px;
+    border-radius: 10px; /* Smooth corners */
+}
+
+.contact-info {
+    display: flex; /* Flex layout for contact info */
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 40px;
+}
+
+.info-card {
+    background-color: #8eb4d9; /* Darker background for cards */
+    border: 2px solid #555; /* Border for definition */
+    border-radius: 15px; /* Smooth corners */
+    padding: 20px;
+    width: 300px; /* Fixed width */
+    transition: transform 0.5s; /* Smooth hover effect */
+}
+
+.info-card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.social-media {
+    font-size: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.contact-form {
+    margin-top: 40px;
+    text-align: left; /* Left-align for the form */
+    padding: 20px;
+    background: #eff3f6; /* Darker background for the form */
+    border-radius: 15px; /* Smooth corners */
+}
+
+.contact-form h2 {
+    text-align: center; /* Center the heading */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Space between form groups */
+}
+
+label {
+    display: block;
+    font-size: 1.2em; /* Larger font size */
+    color: rgb(14, 13, 13); /* Highlighted text */
+}
+
+input, textarea {
+    width: 100%; /* Full-width fields */
+    padding: 10px;
+    border: 2px solid #555; /* Border for definition */
+    border-radius: 10px; /* Smooth corners */
+    background: #333; /* Darker background */
+    color: white; /* Text color */
+}
+
+button {
+    background: rgb(5, 110, 35); /* Button background */
+    color: white; /* Button text */
+    border: 2px solid white; /* Border for definition */
+    border-radius: 15px; /* Smooth corners */
+    padding: 10px;
+    transition: transform 0.5s; /* Smooth hover effect */
+}
+
+button:hover {
+    transform: scale(1.1); /* Scale effect on hover */
+}
+
+footer {
+    padding: 10px;
+    background: #333; /* Darker background for footer */
+    color: white;
+    border-top: 2px solid #555; /* Border for definition */
+    text-align: center; /* Centered text */
+}
